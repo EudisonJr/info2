@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasco da Gama</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            line-height: 1.6;
+            opacity: 0; /* Inicialmente invisível para a animação de carregamento */
+            animation: fadeIn 0.5s ease-in-out forwards; /* Animação ao carregar */
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header img {
+            max-width: 200px;
+            height: auto;
+        }
+
+        .menu {
+            background-color: #2c2c2c; /* Cor de fundo do menu */
+            padding: 5px 0;
+            margin-bottom: 20px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            text-align: center;
+        }
+
+        .menu a {
+            color: #f0f0f0; /* Cor do texto do menu */
+            text-decoration: none;
+            padding: 5px 30px;
+            font-weight: bold;
+            transition: color 0.3s ease, background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+            color: #fff;
+        }
+
+        section {
+            padding: 30px;
+            text-align: justify;
+            margin: 0 auto;
+            width: 80%;
+            box-shadow:
+                inset 0 1px 1px rgba(0,0,0,.05),
+                inset 0 -1px 1px rgba(0,0,0,.05),
+                1px 0 1px rgba(0,0,0,.05),
+                -1px 0 1px rgba(0,0,0,.05),
+                0 0 5px rgba(0, 0, 0, 0.1),
+                0 0 10px rgba(0, 0, 0, 0.05) inset,
+                0 1px 5px rgba(0, 0, 0, 0.1) inset,
+                0 -1px 5px rgba(0, 0, 0, 0.1) inset,
+                1px 0 5px rgba(0, 0, 0, 0.1) inset,
+                -1px 0 5px rgba(0, 0, 0, 0.1) inset;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            position: relative;
+            transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transições para hover na seção */
+        }
+
+        section:nth-child(even) {
+            background-color: #333; /* Cor de fundo "negativa" para seções pares */
+            color: #f0f0f0; /* Cor do texto "negativa" para seções pares */
+        }
+
+        section:nth-child(even) h2,
+        section:nth-child(even) h3 {
+            color: #f0f0f0; /* Cor dos títulos "negativa" para seções pares */
+            border-bottom-color: #f0f0f0; /* Cor da borda dos títulos "negativa" */
+        }
+
+        section:nth-child(odd) {
+            background-color: #f9f9f9; /* Cor de fundo padrão para seções ímpares */
+        }
+
+        section:hover {
+            box-shadow:
+                inset 0 2px 2px rgba(0,0,0,.08),
+                inset 0 -2px 2px rgba(0,0,0,.08),
+                2px 0 2px rgba(0,0,0,.08),
+                -2px 0 2px rgba(0,0,0,.08),
+                0 0 8px rgba(0, 0, 0, 0.15),
+                0 0 12px rgba(0, 0, 0, 0.08) inset;
+            transform: translateY(-2px); /* Leve deslocamento para cima no hover */
+        }
+
+        section h2, section h3 {
+            color: #000;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-align: left;
+            font-weight: 700;
+        }
+
+        section h2 {
+            font-size: 2em;
+            padding-bottom: 5px;
+            border-bottom: 2px solid #000;
+        }
+
+        section h3 {
+            font-size: 1.5em;
+            margin-top: 20px;
+        }
+
+        section p {
+            line-height: 1.7;
+            margin-bottom: 15px;
+        }
+
+        section ul {
+            list-style-type: disc;
+            margin-left: 30px;
+            padding-left: 0;
+        }
+
+        section li {
+            margin-bottom: 10px;
+        }
+
+        #titulos h3 {
+            margin-top: 30px;
+        }
+
+        footer {
+            background-color: #2c2c2c; /* Cor de fundo do footer */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.8em;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <img src="logo_vasco_header_nova.png" alt="Logo do Vasco da Gama">
+    </header>
+
+    <div class="menu">
+        <a href="#historia">História</a>
+        <a href="#titulos">Títulos</a>
+        <a href="#estadio">Estádio</a>
+        <a href="#idolos">Ídolos</a>
+    </div>
+
+    <section id="historia">
+        <h2>Bem-vindo ao site oficial do Vasco da Gama!</h2>
+        <p>Este é o portal oficial do Clube de Regatas Vasco da Gama, um dos maiores e mais tradicionais clubes de futebol do Brasil.</p>
+        <p><br></p>
+        <h3>HISTÓRIA</h3>
+        <p> O Clube de Regatas Vasco da Gama, fundado em 21 de agosto de 1898 no Rio de Janeiro, tem uma história rica e fascinante, marcada por superações e grandes conquistas. Inicialmente, o clube surgiu como uma agremiação de remo, esporte popular na época, e foi nomeado em homenagem ao navegador português Vasco da Gama, um dos maiores exploradores da história. O nome não só fez referência ao descobridor da rota marítima para a Índia, mas também simbolizava o espírito aventureiro e desbravador que sempre caracterizou o clube.<br>
+            <br>A verdadeira revolução do Vasco, no entanto, ocorreu quando o clube começou a investir no futebol, esporte que chegava ao Brasil na década de 1910. O futebol do Vasco, porém, sempre foi diferente de outros clubes. O clube abraçou a inclusão social, sendo um dos primeiros a aceitar jogadores negros e de classes sociais mais humildes. Esse compromisso com a igualdade gerou um grande impacto, tanto dentro do clube quanto fora dele. O Vasco se tornou um símbolo de resistência contra o racismo no futebol brasileiro. Em 1923, o clube conquistou o Campeonato Carioca com uma equipe predominantemente formada por jogadores negros e mestiços, um marco na história do esporte no país.<br>
+            <br> as décadas seguintes, o Vasco se consolidou como uma potência do futebol brasileiro. Nos anos 40 e 50, com o time conhecido como Expresso da Vitória, o clube viveu sua era de ouro. Equipes com grandes jogadores, como Bellini, Vavá, Danilo e Tim, garantiram ao Vasco títulos expressivos, como o Campeonato Carioca e a Taça Rio Internacional, além de consolidar a fama de clube forte tanto no Brasil quanto no exterior.<br>
+            <br>A década de 1990 marcou o renascimento do Vasco em nível continental, com a conquista da Copa Libertadores em 1998, o maior título da história do clube, que consolidou sua fama internacional. Além disso, o Vasco foi campeão do Campeonato Brasileiro, da Copa do Brasil e da Copa Mercosul nas décadas seguintes, com um time recheado de estrelas, incluindo o atacante Romário e o meia Edmundo, ídolos imortais da história do clube.</p>
+    </section>
+
+    <section id="titulos">
+        <h3>TÍTULOS</h3>
+        <p> <br>Títulos Internacionais:<br>
+            <ul>
+                <li>Copa Libertadores da América: 1998</li>
+                <li>Copa Mercosul: 2000</li>
+                <li>Campeonato Sul-Americano de Campeões: 1948</li>
+            </ul>
+        </p>
+        <p><br> Títulos Nacionais:<br>
+            <ul>
+                <li>Campeonato Brasileiro: 1974, 1989, 1997, 2000, 2004</li>
+                <li>Copa do Brasil: 2011</li>
+                <li>Campeonato Brasileiro - Série B: 2009</li>
+                <li>Torneio Rio-São Paulo: 1958, 1966, 1999</li>
+            </ul>
+        </p>
+        <p><br> Títulos Estaduais:<br>
+            <ul>
+                <li>Campeonato Carioca: 1923, 1934, 1936, 1945, 1970, 1974, 1982, 1987, 1992, 1998, 2003, 2015</li>
+            </ul>
+        </p>
+        <p><br> Títulos Regionais:<br>
+            <ul>
+                <li>Campeonato do Rio de Janeiro: 1906, 1907, 1908, 1910, 1911, 1912, 1913, 1914, 1915, 1916, 1917, 1918</li>
+                <li>Taça Guanabara: 1965, 1970, 1974, 1989</li>
+                <li>Taça Rio: 1965, 1970, 1974, 1989</li>
+            </ul>
+        </p>
+        <p><br> as décadas seguintes, o Vasco se consolidou como uma potência do futebol brasileiro. Nos anos 40 e 50, com o time conhecido como Expresso da Vitória, o clube viveu sua era de ouro. Equipes com grandes jogadores, como Bellini, Vavá, Danilo e Tim, garantiram ao Vasco títulos expressivos, como o Campeonato Carioca e a Taça Rio Internacional, além de consolidar a fama de clube forte tanto no Brasil quanto no exterior.</p>
+    </section>
+
+    <section id="estadio">
+        <h3>ESTÁDIO</h3>
+        <p><br>O Estádio Club de Regatas Vasco da Gama, popularmente conhecido como São Januário, é um dos estádios de futebol mais históricos e emblemáticos do Brasil. Localizado no bairro de São Januário, na cidade do Rio de Janeiro, sua construção foi um marco para o clube e para o futebol brasileiro.</p>
+        <p><br>A ideia de construir um estádio próprio surgiu na década de 1920, em um período de grande ascensão do futebol vascaíno. A campanha para a construção mobilizou a torcida e a comunidade portuguesa do Rio de Janeiro, que contribuiu financeiramente para a realização do sonho. A pedra fundamental foi lançada em 1926, e a inauguração ocorreu em 21 de abril de 1927, com uma partida amistosa contra o Benfica de Portugal.</p>
+        <p><br>São Januário foi o maior estádio da América Latina na época de sua inauguração, com capacidade para cerca de 40.000 pessoas. Sua arquitetura em estilo neoclássico, com a imponente fachada e os azulejos portugueses, o tornam um patrimônio histórico e cultural da cidade. Ao longo dos anos, o estádio foi palco de inúmeros jogos memoráveis, decisões de campeonatos e eventos importantes, tanto para o Vasco quanto para o futebol brasileiro.</p>
+        <p><br>Atualmente, a capacidade oficial de São Januário é de aproximadamente 21.880 espectadores, após diversas reformas e adaptações ao longo do tempo. Apesar de não ser mais o maior estádio do país, ele mantém sua importância histórica e sentimental para a torcida vascaína, sendo considerado a "casa" do clube e um local de grande simbolismo.</p>
+        <p><br>Além dos jogos de futebol, São Januário também abriga a sede administrativa do Vasco da Gama, instalações para outras modalidades esportivas praticadas pelo clube e um centro de memória que preserva a rica história da instituição.</p>
+        <img src="RB.jpg" alt="ROBERTO DINAMITE" style="width: 30%; height: auto; margin-top: 20px; border-radius: 5px;">
+        <video controls width="560" height="315">
+            <source src="Estádio Vasco da Gama (São Januário) - 01015.mp4" type="video/mp4">
+            Seu navegador não suporta a tag de vídeo.
+        </video>
+    </section>
+
+    <section id="idolos">
+        <h3>ÍDOLOS</h3>
+        <p><br>Ao longo de sua gloriosa história, o Vasco da Gama contou com inúmeros jogadores que se tornaram ídolos da torcida e marcaram seus nomes na história do clube e do futebol brasileiro. Estes atletas, com talento, raça e identificação com a camisa cruzmaltina, conquistaram títulos importantes e o coração dos vascaínos.</p>
+        <p><br>Entre os grandes ídolos, destacam-se:</p>
+        <ul>
+            <li><strong>Ademir de Menezes:</strong> Um dos maiores atacantes da história do futebol brasileiro, conhecido como "Queixada". Brilhou no Expresso da Vitória e na Seleção Brasileira.</li>
+            <li><strong>Jair Rosa Pinto:</strong> Meio-campista elegante e cerebral, fundamental no Expresso da Vitória e na seleção.</li>
+            <li><strong>Bellini:</strong> Zagueiro clássico e capitão da primeira seleção brasileira campeã mundial em 1958.</li>
+            <li><strong>Vavá:</strong> Atacante goleador, bicampeão mundial com a Seleção Brasileira em 1958 e 1962.</li>
+            <li><strong>Roberto Dinamite:</strong> O maior artilheiro da história do Vasco e do Campeonato Brasileiro. Um atacante potente e ídolo máximo da torcida.</li>
+            <li><strong>Romário:</strong> Um dos maiores atacantes de todos os tempos, campeão brasileiro e da Mercosul pelo Vasco, com passagens marcantes e muitos gols.</li>
+            <li><strong>Edmundo:</strong> Conhecido como "Animal", um atacante habilidoso e explosivo, fundamental nas conquistas do Campeonato Brasileiro de 1997 e da Libertadores de 1998.</li>
+            <li><strong>Juninho Pernambucano:</strong> Meio-campista com um chute potente e preciso, ídolo em diversas passagens pelo clube e fundamental na conquista da Libertadores de 1998.</li>
+        </ul>
+        <p><br>Estes são apenas alguns dos muitos jogadores que vestiram a camisa do Vasco com honra e se tornaram símbolos de garra e paixão para a torcida. A história do Vasco é repleta de ídolos que ajudaram a construir a grandeza deste clube centenário.</p>
+    </section>
+
+    <footer>
+        &copy; 2025 Meu Site do Vasco
+    </footer>
+
+</body>
+</html>
